@@ -1,0 +1,21 @@
+CREATE TABLE tweets (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    screen_name TEXT,
+    user_name TEXT,
+    date DATE,
+    text TEXT,
+    text_len INT,
+    flag_faulty BOOLEAN,
+    flag_sentiment BOOLEAN,
+    flag_answer BOOLEAN,
+    search_id INTEGER,
+    tb_polarity REAL,
+    tb_subjectivity REAL,
+    tb_sentiment REAL,
+    vader_neg REAL,
+    vader_neu REAL,
+    vader_pos REAL,
+    vader_compound REAL,
+    vader_sentiment REAL,
+    total_sentiment REAL
+);
